@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Application with Knockout</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Address</div>
+                    <div class="panel-body">
+                        <div id="addressFromFields" class="form-group">
+                            <label for="autocompleteFromAddress"> From Address</label>
+                            <input id="autocompleteFromAddress" class="form-control" data-bind="addressAutoComplete: mapApplication.mapsModel.fromAddress" placeholder="where are u from" type="text">
+                        </div>
+
+                        <div id="addressToFields" class="form-group">
+                            <label for="autocompleteToAddress"> From Address</label>
+                            <input id="autocompleteToAddress" class="form-control" data-bind="addressAutoComplete: mapApplication.mapsModel.toAddress" placeholder="where are you going" type="text">
+                        </div>
+
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/knockout.js"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpgRM0vkrKG5D648S3zPCDf-neOnimVaw&libraries=places"></script>
+
+ <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script> -->
+    <script type="text/javascript" src="javascript/mapsapplication.js"></script>
+    
+</body>
+</html>

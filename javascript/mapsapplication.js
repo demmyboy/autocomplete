@@ -1,4 +1,3 @@
-console.log("mapApplication!");
 var mapApplication = function (){
 
 	//add member here
@@ -27,7 +26,7 @@ var mapApplication = function (){
 	
 	var init = function(){
 	// add code to initialise the module
-	ko.applyBindings(mapApplication);
+		ko.applyBindings(mapApplication);
 	};
 	
 	// execute the init function when the DOM is ready
@@ -38,4 +37,3 @@ var mapApplication = function (){
 	mapsModel: mapsModel
 	};
 }();
-ko.applyBindings(mapApplication);
